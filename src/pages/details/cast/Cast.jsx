@@ -22,7 +22,7 @@ const Cast = ({ data, loading }) => {
   return (
     <div className="castSection">
       <ContentWrapper>
-        <div className="sectionHeading">Top Cast</div>
+        <div className="sectionHeading">Top Casts</div>
         {!loading ? (
           <div className="listItems">
             {data?.map((item) => {
