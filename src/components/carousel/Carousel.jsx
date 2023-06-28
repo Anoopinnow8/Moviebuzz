@@ -49,12 +49,12 @@ const Carousel = ({ data, loading, endpoint, title }) => {
       <ContentWrapper>
         {title && <div className="carouselTitle">{title}</div>}
         <BsFillArrowLeftCircleFill
-          classname="carouselLeftNav arrow"
+          className="carouselLeftNav arrow"
           onClick={() => navigation("left")}
         />
 
         <BsFillArrowRightCircleFill
-          classname="carouselRighttNav arrow"
+          className="carouselRighttNav arrow"
           onClick={() => navigation("right")}
         />
         {!loading ? (
