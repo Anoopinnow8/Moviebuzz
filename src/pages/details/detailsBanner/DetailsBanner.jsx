@@ -9,7 +9,7 @@ import ContentWrapper from "../../../components/contentWrapper/ContentWrapper";
 import useFetch from "../../../hooks/useFetch";
 import Genres from "../../../components/genres/Genres";
 import CircleRating from "../../../components/circleRating/CircleRating";
-import LazyLoadImage from "../../../components/LazyLoadImage";
+import LazyLoadImages from "../../../components/LazyLoadImage";
 import PosterFallback from "../../../assets/Moviex-images/no-poster.png";
 import { PlayIcon } from "../Playbtn";
 import VideoPopup from "../../../components/videoPopup/VideoPopup";
@@ -43,19 +43,19 @@ const DetailsBanner = ({ video, crew }) => {
           {!!data && (
             <React.Fragment>
               <div className="backdrop-img">
-                <LazyLoadImage src={url.backdrop + data.backdrop_path} />
+                <LazyLoadImages src={url.backdrop + data.backdrop_path} />
               </div>
               <div className="opacity-layer"></div>
               <ContentWrapper>
                 <div className="content">
                   <div className="left">
                     {data.poster_path ? (
-                      <LazyLoadImage
+                      <LazyLoadImages
                         className="posterImg"
                         src={url.backdrop + data.poster_path}
                       />
                     ) : (
-                      <LazyLoadImage
+                      <LazyLoadImages
                         className="posterImg"
                         src={PosterFallback}
                       />
