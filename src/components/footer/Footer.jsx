@@ -34,9 +34,14 @@ const Footer = () => {
           <span className="icon">
             <FaFacebookF />
           </span>
-          <span className="icon">
+          <a
+            href="https://www.instagram.com/anoop_patel_18/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="icon text-white"
+          >
             <FaInstagram />
-          </span>
+          </a>
           <span className="icon">
             <FaTwitter />
           </span>
